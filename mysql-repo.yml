@@ -1,6 +1,9 @@
 
 ---
- - hosts: web-server
+#all for AWX 
+ - hosts: all
+#web-server for normal terminal
+#  - hosts: web-server  
    remote_user: root
    tasks:
     - name: Install MySQL 5.7 repo
